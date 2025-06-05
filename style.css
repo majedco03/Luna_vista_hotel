@@ -1,0 +1,154 @@
+.head-grid{
+    display: grid;
+   grid-template-columns: 5% 90% 5%;
+   grid-template-rows: 25% 75%;
+    width: 100vw;
+    margin-bottom: 5rem;
+}
+body{
+    margin: 0;
+  padding: 0;
+  min-height: 200vh;
+
+  background: linear-gradient(345deg, #000000, #422f5f, #936de6, #8a4ac6, #190831);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  color: white;
+  font-family: 'Georgia', serif;
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: 1/1/1/7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    z-index: 999; 
+    padding: 0 30px
+
+}
+.navbar{
+    align-self: center;
+    justify-self: center;
+    border-radius: 30px;
+    width: 100vh;
+    
+}
+
+.header>img{
+    border: 5px solid;
+    border-radius: 50%;
+    width: 90px;
+    margin-right: 2rem;
+}
+h1{
+    margin-right: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2/2;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .intro > img {
+    width: 90%;       
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+  .intro > p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    color: aliceblue;
+    margin-bottom: 10rem;
+    font-family: "Georgia", serif;
+  }
+
+  .rooms-grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 3rem;
+    width: 100vw;
+    text-align: center;
+    font-family: "Georgia", serif;
+  }
+
+  .rooms-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    
+  }
+
+  .rooms-grid > p{
+    grid-row: 1;
+    color: aliceblue;
+  }
+
+  .card{
+   grid-row: 2s;
+   margin-bottom: 2rem;
+  }
+
+  span{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .features-grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 3rem;
+    width: 100vw;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Georgia", serif;
+  }
+
+  .feature-icon{
+    border-radius: 30%;
+    width: 3rem;
+    height: 3rem;
+    color: aliceblue;
+  }
+ h3{
+    color: aliceblue;
+ }
+
+a{
+    color: alicebluem;
+}
+.fp{
+    color: aliceblue;
+}
+.fa{
+    color: aliceblue;
+}
+
+  @media (max-width:1250px){
+    .rooms-content{
+        flex-direction: column;
+    }
+  }
